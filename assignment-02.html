@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assignment-02.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
+    <title>assignment-02</title>
+</head>
+<body>
+    <!--flex container which house the game console-->
+    <div class="container">
+        <!--left column houses the left button and is positioned relative to the central control unit-->
+        <div class="lights-left">
+            <!--first part of class used to listen to button clicks second part used to style button-->
+            <div type="button" id="green" class="btn green"></div>
+            <div type="button" id="yellow" class="btn yellow"></div>
+        </div>
+        <!--center 'container' housing the scores/start and light components-->
+        <div class="control">
+            <div class="control__display">
+                <input class="control__display-level-best" type="text" value="0"/>
+                <button class="control__display-start">START</button>
+                <input class="control__display-level-current" type="text" value="0"/>
+            </div>
+            <div class="control__light-switch"></div>
+        </div>
+        <!--right column housing the right colour buttons. Positioning mirrors that of left column-->
+        <div class="lights-right">
+            <div type="button" id="red" class="btn red"></div>
+            <div type="button" id="blue" class="btn blue"></div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="assignment-02.js"></script>
+</body>
+</html>

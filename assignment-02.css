@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: #40090d;
+}
+
+/*attempting to use a BEM naming convention*/
+.container{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    background-color: #40090d;
+    width: 100vw;
+    height: 100vh;
+    font-size: xx-large;
+}
+
+.lights-left > div {
+    z-index: 1;
+    position: relative;
+    right: 50px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: solid 15px #0c090a;
+    cursor: pointer;
+}
+
+.lights-right > div {
+    cursor: pointer;
+    position: relative;
+    left: 50px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: solid 15px #0c090a;
+}
+
+/*BEM broke down with the light buttons naming their class by colour enabled easier passing of id/classs for button click function*/
+.green{
+    background: linear-gradient(to left, #66ff33 -1%, #009900 88%);
+    margin-bottom:90px ;
+}
+
+.red{
+background: linear-gradient(to right, #ff3300 27%, #cc0000 88%);
+margin-bottom:90px ;
+}
+
+.blue{
+background: linear-gradient(to left, #0033cc 2%, #0099ff 63%);
+}
+
+.yellow{
+    background: linear-gradient(to left, #ffff00 27%, #cccc00 88%);
+}
+
+.control{
+    position: absolute;
+    background-color: #101010;
+    width:300px;
+    height: 300px;
+    border: solid 15px #0c090a;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.control__display{
+    position: relative;
+    background-color: #101010;
+    top: 130px;
+}
+
+.control__display-level-best, .control__display-level-current{
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    background: linear-gradient(to bottom, #f0f0f0 25%, #c1c7c9 103%);
+    border: none;
+    cursor:default;
+    font-family: 'Orbitron', sans-serif;
+    text-align: center;
+}
+
+.control__display-start{
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    background: linear-gradient(to bottom, #f0f0f0 25%, #c1c7c9 103%);
+    border: none;
+    cursor: pointer;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.control__light-switch{
+    position: relative;
+    left: 145px;
+    top: 150px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ff3300;
+}
+
+/*adding and removing this class within a function enables flashing effect*/
+.pressed {
+    box-shadow: 0 0 20px white;
+    background: linear-gradient(to bottom, #ccffff 0%, #ffffcc 100%);
+    background-color: grey;
+  }
