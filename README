@@ -18,6 +18,10 @@ Re-create a version of the Simon game as a (HTML/CSS/JS) web app. Your app must
 implement the interface shown in Figures 1, and only requires implementation of the following
 single-player game play.
 
+Figures 1
+
+![alt text](https://github.com/jphoulihan/simon-game-2.0/blob/main/figure-1.png?raw=true)
+
 The Single-Player Simon Game is as follows:
 
 1. Click the START button to begin, the game status indicator (the red/green light below the START
