@@ -1,26 +1,46 @@
-The Simon Memory Game
+# **The Simon Memory Game**
+
+## **Description**
 
 The Simon electronic memory skill game, invented in 1978 by Ralph H. Baer and Howard J. Morrison,
 creates a series of tones and lights and requires a user to repeat the sequence. If the user succeeds,
 the series becomes progressively longer and more complex. Once the user fails or the time limit runs
-out, the game is over. Simon is named ater the simple children's game of Simon Says, but the
-gameplay is based on Atari's unpopular Touch Me arcade game from 1974.
+out, the game is over. Gameplay is based on Atari's unpopular Touch Me arcade game from 1974.
+
+## **Features**
 
 The device has four coloured buttons, each producing a particular tone when it is pressed or
-activated by the device. A round in the game consists of the device lighting up one or more buttons
-in a random order, after which the player must reproduce that order by pressing the buttons. As the
+activated by the device. 
+
+A round in the game consists of the device lighting up one or more buttons
+in a random order, after which the player must reproduce that order by pressing the buttons. 
+
+As the
 game progresses, the number of buttons to be pressed increases.
 
+## **Technology Used**
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+![jQuery](https://img.shields.io/badge/jquery-%230769AD.svg?style=for-the-badge&logo=jquery&logoColor=white)
+<br />
 
-Requirements
-
-Re-create a version of the Simon game as a (HTML/CSS/JS) web app. Your app must
-implement the interface shown in Figures 1, and only requires implementation of the following
-single-player game play.
-
-Figures 1
+## Visual Representation Of The Console As Per Client Requirements 
 
 ![alt text](https://github.com/jphoulihan/simon-game-2.0/blob/main/figure-1.png?raw=true)
+<br /><br />
+
+## End Product
+![alt text](app-console.png "app image example")
+<br /><br />
+
+## **To Run This Project**
+
+```
+$ git clone https://github.com/jphoulihan/simon-game-2.0.git
+```
+
+## **Game Play**
 
 The Single-Player Simon Game is as follows:
 
@@ -45,41 +65,26 @@ will have to click START button to begin a new game.
 
 7. Your progress (the number of correctly repeated signals) for the game just completed (last game)
 is shown in the display to the right of the START button. The all-time highest score is shown in the
-display to the left of the START button.
+display to the left of the START button.<br /><br />
 
+## **Learning Outcomes**
+* DOM Event Listeners
+* Asynchronous functions
+* Styling as per clients needs with CSS
+* jQuery HTML document traversal
 
+## **Future Development**
 
-Development Notes
+* Memory peristent layer to record high scores and leader boards
+* Account creation
+* Start game from a higher level
+<br /><br />
 
-1. All game interface elements must be generated using HTML elements together with appropriate
-CSS styling. Generally, your colour schemes, must follow a similar colour scheme to that shown in
-Figure 1. You may not use pre-constructed images for any of the game elements. All of the
-elements shown were created using HTML and CSS in codepen.io, and (for convenience of display
-in this document) were combined using Keynote.
+## Created by
 
-2. The position of the interactive and display elements must, in general, be structured as shown in
-Figure 1. You cannot use another layer or design for your assignment.
+- [John Houlihan](https://github.com/jphoulihan "Visit John's GitHub")<br/><br/>
 
-3. The font family used is “Orbitron” and you may load it from hGps://fonts.googleapis.com/. You
-may not use any other font as part of the display.
+## License
 
-4. You may not use a CSS framework, such as Bootstrap, for this assignment. You may, if you wish,
-use the jQuery Javascript framework. If you use TypeScript, or similar, and transpire to JavaScript,
-you need to provide all sources. Your app only needs to run on a desktop browser such as Chrome
-- you do not need to ensure it works on every browser (mobile browsers, for example).
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-5. You must comment your code, clearly indicating, how your code implements the Single-Player
-Simon game.
-
-
-Testing Notes
-
-the browser used while developing was a brave chromium browser.
-
-gameplay tested in firefox and google chrome.
-
-LEARNING RESOURCES
-
-W3Schools: setTimeout and clearTimeot functions,CSS gradient colors, positioning, jQuery syntax reference 
-
-jQuery: Documentation css methods
