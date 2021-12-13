@@ -78,7 +78,7 @@ display to the left of the START button.<br /><br />
 * Memory peristent layer to record high scores and leader boards
 * Account creation
 * Start game from a higher level
-<br /><br />
+<br />
 
 ## Created by
 
